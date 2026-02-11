@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roadmap & Calculadora de ROI - BPO CRM</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .step-active { border-left: 4px solid #3b82f6; background-color: #eff6ff; }
+        input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+        .tier-badge { transition: all 0.3s ease; }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans text-gray-900">
+
+    <div class="max-w-5xl mx-auto py-12 px-6">
+        <!-- Header -->
+        <header class="mb-12 border-b pb-6">
+            <h1 class="text-3xl font-bold text-gray-800">Estratégia de Implementação: BPO CRM Nola</h1>
+            <p class="text-gray-600 mt-2">Foco: Validação, Escalabilidade e ROI Incremental</p>
+        </header>
+
+        <!-- Seção 1: Roadmap 90 Dias -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-semibold mb-8 flex items-center">
+                <span class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center mr-3 text-sm">1</span>
+                Roadmap de Evolução: Do Serviço ao Produto
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Mês 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+                    <div class="text-blue-600 font-bold mb-2">DIAS 1 - 30</div>
+                    <h3 class="font-bold text-lg mb-4 text-gray-800">Validação & ROI Rápido</h3>
+                    <ul class="text-sm text-gray-600 space-y-3">
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">●</span>
+                            Execução manual dos 12 pilotos (PM Hands-on).
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">●</span>
+                            Foco em "Quick Wins": Réguas de Winback e Aniversário.
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">●</span>
+                            Garantia da meta de ROI 4x para os primeiros clientes.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Mês 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+                    <div class="text-blue-600 font-bold mb-2">DIAS 31 - 60</div>
+                    <h3 class="font-bold text-lg mb-4 text-gray-800">Processos & Playbooks</h3>
+                    <ul class="text-sm text-gray-600 space-y-3">
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">●</span>
+                            Criação de Playbooks por nicho (Pizzaria, Sushi, Burger).
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">●</span>
+                            Identificação de gargalos na coleta de dados no PDV.
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">●</span>
+                            Definição de rituais de reporte de faturamento para clientes.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Mês 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+                    <div class="text-blue-600 font-bold mb-2">DIAS 61 - 90</div>
+                    <h3 class="font-bold text-lg mb-4 text-gray-800">Escalabilidade & Produto</h3>
+                    <ul class="text-sm text-gray-600 space-y-3">
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">●</span>
+                            Entrega de requisitos para automação das réguas campeãs.
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">●</span>
+                            Redução do tempo do analista em 50% via ferramenta.
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">●</span>
+                            Transição do BPO para "Onboarding Premium" escalável.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mt-8 bg-blue-50 p-4 rounded-lg border border-blue-100 italic text-sm text-blue-800">
+                "O BPO é o nosso laboratório de Discovery. Validamos no serviço para escalar no código."
+            </div>
+        </section>
+
+        <!-- Seção 2: Calculadora de ROI -->
+        <section>
+            <h2 class="text-2xl font-semibold mb-8 flex items-center">
+                <span class="bg-green-600 text-white w-8 h-8 rounded-full flex items-center justify-center mr-3 text-sm">2</span>
+                Calculadora de Viabilidade (Auto-Tiering)
+            </h2>
+
+            <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 grid md:grid-cols-2 gap-12">
+                <!-- Inputs -->
+                <div class="space-y-6">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Tamanho da Base de Contatos</label>
+                        <input type="number" id="baseContatos" value="3000" class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none transition-all" placeholder="Ex: 2500">
+                        <p class="text-[11px] text-gray-500 mt-1">O Tier de investimento é ajustado automaticamente com base no volume.</p>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Ticket Médio (R$)</label>
+                        <input type="number" id="ticketMedio" value="80" class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none transition-all">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Investimento BPO Sugerido</label>
+                        <div id="tierContainer" class="p-4 bg-gray-50 border rounded-lg flex justify-between items-center">
+                            <div>
+                                <span id="tierLabel" class="text-sm font-bold text-blue-700 block text-xs uppercase">Tier 2</span>
+                                <span id="custoBPOText" class="text-lg font-bold text-gray-800">R$ 1.490,00</span>
+                            </div>
+                            <span id="tierRange" class="text-[10px] bg-blue-100 text-blue-700 px-2 py-1 rounded-full font-medium">1.5k a 5k contatos</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resultados -->
+                <div class="bg-gray-900 rounded-xl p-6 text-white flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-gray-400 text-sm uppercase tracking-wider mb-6">Meta de Retorno: ROI 4.0</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <p class="text-xs text-gray-400">Faturamento Extra Necessário</p>
+                                <p id="faturamentoMeta" class="text-3xl font-bold text-green-400">R$ 5.960,00</p>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-400">Pedidos Extras Necessários (mês)</p>
+                                <p id="pedidosNecessarios" class="text-2xl font-semibold text-white">75 pedidos</p>
+                            </div>
+                            <div class="pt-4 border-t border-gray-700">
+                                <p class="text-xs text-gray-400">Taxa de Conversão Exigida da Base</p>
+                                <p id="taxaConversao" class="text-2xl font-semibold text-blue-400">2,50%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-[10px] text-gray-500 mt-6">* Cálculos baseados no investimento sugerido para a base atual.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conclusão de impacto -->
+        <footer class="mt-16 text-center text-gray-500 text-sm">
+            <p></p>
+        </footer>
+    </div>
+
+    <script>
+        const ticketInput = document.getElementById('ticketMedio');
+        const baseInput = document.getElementById('baseContatos');
+        
+        const tierLabel = document.getElementById('tierLabel');
+        const custoBPOText = document.getElementById('custoBPOText');
+        const tierRange = document.getElementById('tierRange');
+
+        const faturamentoMetaDisplay = document.getElementById('faturamentoMeta');
+        const pedidosDisplay = document.getElementById('pedidosNecessarios');
+        const taxaDisplay = document.getElementById('taxaConversao');
+
+        function updateTier(base) {
+            let custo = 1490;
+            let label = "Tier 2";
+            let range = "1.5k a 5k contatos";
+
+            if (base < 1500) {
+                custo = 890;
+                label = "Tier 1";
+                range = "Até 1.5k contatos";
+            } else if (base > 5000) {
+                custo = 2390;
+                label = "Tier 3";
+                range = "Acima de 5k contatos";
+            }
+
+            tierLabel.innerText = label;
+            custoBPOText.innerText = custo.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+            tierRange.innerText = range;
+            
+            return custo;
+        }
+
+        function calcular() {
+            const ticket = parseFloat(ticketInput.value) || 0;
+            const base = parseFloat(baseInput.value) || 0;
+            const roiMeta = 4;
+            
+            const custoBPO = updateTier(base);
+
+            const faturamentoMeta = custoBPO * roiMeta;
+            const pedidos = Math.ceil(faturamentoMeta / (ticket || 1));
+            const taxa = base > 0 ? (pedidos / base) * 100 : 0;
+
+            faturamentoMetaDisplay.innerText = faturamentoMeta.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+            pedidosDisplay.innerText = pedidos + ' pedidos';
+            taxaDisplay.innerText = (isFinite(taxa) ? taxa.toFixed(2) : "0.00") + '%';
+        }
+
+        ticketInput.addEventListener('input', calcular);
+        baseInput.addEventListener('input', calcular);
+
+        calcular();
+    </script>
+</body>
+</html>
